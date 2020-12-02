@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sw_all"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:orientation="vertical"
+    tools:context=".features.personal.PersonalActivity">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:id="@+id/actionBar"
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize"
+                android:background="#145399">
+
+                <ImageView
+                    android:id="@+id/btnBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/_6sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="?selectableItemBackgroundBorderless"
+                    android:padding="@dimen/_10sdp"
+                    android:src="@drawable/ic_back_per" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="@string/customer_info"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_13sdp" />
+            </RelativeLayout>
+            <androidx.core.widget.NestedScrollView
+                android:layout_below="@+id/actionBar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+
+                <ImageView
+                    android:layout_width="@dimen/_90sdp"
+                    android:layout_height="@dimen/_90sdp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:src="@drawable/ic_ava_demo" />
+
+                <TextView
+                    android:id="@+id/tv_name"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:textSize="@dimen/_15sdp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_16sdp"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:text="@string/identify_add"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13sdp" />
+
+                <TextView
+                    android:id="@+id/tv_identity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_16sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:textSize="@dimen/_12sdp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:layout_marginStart="@dimen/_16sdp"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:text="@string/phone_number"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13sdp" />
+
+                <TextView
+                    android:id="@+id/tv_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_16sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:textSize="@dimen/_12sdp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_16sdp"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:text="@string/address"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13sdp" />
+
+                <TextView
+                    android:id="@+id/tv_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_16sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_18sdp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:textSize="@dimen/_12sdp" />
+
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_8sdp"
+                    android:background="#e1e2e6" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_product"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/_100sdp">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+                <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginStart="@dimen/_16sdp"-->
+                <!--android:layout_marginTop="@dimen/_12sdp"-->
+                <!--android:fontFamily="@font/montserrat_semibold"-->
+                <!--android:text="@string/huydong_product"-->
+                <!--android:textColor="@color/black"-->
+                <!--android:textSize="@dimen/_14sdp" />-->
+
+                <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginStart="@dimen/_16sdp"-->
+                <!--android:layout_marginTop="@dimen/_8sdp"-->
+                <!--android:drawableStart="@drawable/ic_imei"-->
+                <!--android:drawablePadding="@dimen/_8sdp"-->
+                <!--android:fontFamily="@font/montserrat_medium"-->
+                <!--android:text="54143643131"-->
+                <!--android:textSize="@dimen/_12sdp" />-->
+
+                <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginStart="@dimen/_16sdp"-->
+                <!--android:layout_marginTop="@dimen/_12sdp"-->
+                <!--android:drawableStart="@drawable/ic_line"-->
+                <!--android:drawablePadding="@dimen/_8sdp"-->
+                <!--android:fontFamily="@font/montserrat_medium"-->
+                <!--android:text="77hk99"-->
+                <!--android:textColor="@color/red"-->
+                <!--android:textSize="@dimen/_12sdp" />-->
+
+                <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginStart="@dimen/_16sdp"-->
+                <!--android:layout_marginTop="@dimen/_12sdp"-->
+                <!--android:drawableStart="@drawable/ic_calendar_person"-->
+                <!--android:drawablePadding="@dimen/_8sdp"-->
+                <!--android:fontFamily="@font/montserrat_medium"-->
+                <!--android:text="17 thg 05, 2019"-->
+                <!--android:textSize="@dimen/_12sdp" />-->
+
+                <!--<FrameLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="@dimen/_8sdp"-->
+                <!--android:layout_marginTop="@dimen/_16sdp"-->
+                <!--android:background="#e1e2e6" />-->
+
+                <!--<com.daimajia.swipe.SwipeLayout-->
+                <!--android:id="@+id/swipe_layout"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content">-->
+
+
+                <!--<LinearLayout-->
+                <!--android:id="@+id/right_side"-->
+                <!--android:layout_width="180dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:background="#66ddff00">-->
+
+                <!--<RelativeLayout-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight="1"-->
+                <!--android:background="#3E46E7"-->
+                <!--android:gravity="center"-->
+                <!--android:orientation="vertical">-->
+
+                <!--<ImageView-->
+                <!--android:id="@+id/iv_12"-->
+                <!--android:layout_width="@dimen/_16sdp"-->
+                <!--android:layout_height="@dimen/_16sdp"-->
+                <!--android:layout_centerInParent="true"-->
+                <!--android:layout_gravity="center_vertical"-->
+                <!--android:layout_marginTop="@dimen/_8sdp"-->
+                <!--android:src="@drawable/ic_pen_person" />-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/tv_edit"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_below="@id/iv_12"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:layout_marginTop="@dimen/_5sdp"-->
+                <!--android:clickable="true"-->
+                <!--android:gravity="center_horizontal"-->
+                <!--android:text="Sửa"-->
+                <!--android:textColor="#fff" />-->
+                <!--</RelativeLayout>-->
+
+                <!--<RelativeLayout-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight="1"-->
+                <!--android:background="#CC1818"-->
+                <!--android:gravity="center"-->
+                <!--android:orientation="vertical">-->
+
+                <!--<ImageView-->
+                <!--android:id="@+id/iv_11"-->
+                <!--android:layout_width="@dimen/_16sdp"-->
+                <!--android:layout_height="@dimen/_16sdp"-->
+                <!--android:layout_centerInParent="true"-->
+                <!--android:layout_gravity="center_vertical"-->
+                <!--android:layout_marginTop="@dimen/_8sdp"-->
+                <!--android:src="@drawable/ic_garabge_person" />-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/tv_delete"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_below="@id/iv_11"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:layout_marginTop="@dimen/_5sdp"-->
+                <!--android:clickable="true"-->
+                <!--android:gravity="center_horizontal"-->
+                <!--android:text="Xóa"-->
+                <!--android:textColor="#fff" />-->
+                <!--</RelativeLayout>-->
+
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="vertical">-->
+
+                <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginStart="@dimen/_16sdp"-->
+                <!--android:layout_marginTop="@dimen/_12sdp"-->
+                <!--android:fontFamily="@font/montserrat_semibold"-->
+                <!--android:text="@string/vayvon_product"-->
+                <!--android:textColor="@color/black"-->
+                <!--android:textSize="@dimen/_14sdp" />-->
+
+
+                <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginStart="@dimen/_16sdp"-->
+                <!--android:layout_marginEnd="@dimen/_16sdp">-->
+
+                <!--<TextView-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="@dimen/_8sdp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:drawableStart="@drawable/ic_imei"-->
+                <!--android:drawablePadding="@dimen/_8sdp"-->
+                <!--android:fontFamily="@font/montserrat_medium"-->
+                <!--android:text="Ô tô linh hoạt"-->
+                <!--android:textSize="@dimen/_12sdp" />-->
+
+                <!--<TextView-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentEnd="true"-->
+                <!--android:layout_marginStart="@dimen/_8sdp"-->
+                <!--android:layout_marginTop="@dimen/_8sdp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:drawableStart="@drawable/ic_calendar_person"-->
+                <!--android:drawablePadding="@dimen/_8sdp"-->
+                <!--android:fontFamily="@font/montserrat_medium"-->
+                <!--android:text="100.000.000 VNĐ"-->
+                <!--android:textSize="@dimen/_12sdp" />-->
+                <!--</LinearLayout>-->
+
+
+                <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginStart="@dimen/_16sdp"-->
+                <!--android:layout_marginTop="@dimen/_5sdp"-->
+                <!--android:layout_marginEnd="@dimen/_16sdp">-->
+
+                <!--<TextView-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="@dimen/_8sdp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:drawableStart="@drawable/ic_percent_person"-->
+                <!--android:drawablePadding="@dimen/_8sdp"-->
+                <!--android:fontFamily="@font/montserrat_medium"-->
+                <!--android:text="5.5%"-->
+                <!--android:textSize="@dimen/_12sdp" />-->
+
+                <!--<TextView-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentEnd="true"-->
+                <!--android:layout_marginStart="@dimen/_8sdp"-->
+                <!--android:layout_marginTop="@dimen/_8sdp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:drawableStart="@drawable/ic_calender_next"-->
+                <!--android:drawablePadding="@dimen/_8sdp"-->
+                <!--android:fontFamily="@font/montserrat_medium"-->
+                <!--android:text="17 thg 05, 2019"-->
+                <!--android:textSize="@dimen/_12sdp" />-->
+                <!--</LinearLayout>-->
+
+
+                <!--<Button-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentEnd="true"-->
+                <!--android:layout_marginStart="@dimen/_16sdp"-->
+                <!--android:layout_marginTop="@dimen/_12sdp"-->
+                <!--android:layout_marginEnd="@dimen/_16sdp"-->
+                <!--android:layout_marginBottom="@dimen/_16sdp"-->
+                <!--android:background="@drawable/blue_round_per"-->
+                <!--android:fontFamily="@font/montserrat_medium"-->
+                <!--android:text="@string/re_arrange"-->
+                <!--android:textAllCaps="false"-->
+                <!--android:textSize="@dimen/_13sdp"-->
+                <!--android:visibility="visible" />-->
+                <!--</LinearLayout>-->
+                <!--</com.daimajia.swipe.SwipeLayout>-->
+
+                <!--<FrameLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="@dimen/_8sdp"-->
+                <!--android:background="#e1e2e6" />-->
+
+                <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginStart="@dimen/_16sdp"-->
+                <!--android:layout_marginTop="@dimen/_12sdp"-->
+                <!--android:fontFamily="@font/montserrat_semibold"-->
+                <!--android:text="@string/vayvon_product"-->
+                <!--android:textColor="@color/black"-->
+                <!--android:textSize="@dimen/_14sdp" />-->
+
+                <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginEnd="@dimen/_16sdp">-->
+
+                <!--<TextView-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginStart="@dimen/_16sdp"-->
+                <!--android:layout_marginTop="@dimen/_8sdp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:drawableStart="@drawable/ic_calendar_person"-->
+                <!--android:drawablePadding="@dimen/_8sdp"-->
+                <!--android:fontFamily="@font/montserrat_medium"-->
+                <!--android:text="54546464sdfsd"-->
+                <!--android:textSize="@dimen/_12sdp" />-->
+
+                <!--<TextView-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentEnd="true"-->
+                <!--android:layout_marginStart="@dimen/_8sdp"-->
+                <!--android:layout_marginTop="@dimen/_8sdp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:drawableStart="@drawable/ic_calendar_person"-->
+                <!--android:drawablePadding="@dimen/_8sdp"-->
+                <!--android:fontFamily="@font/montserrat_medium"-->
+                <!--android:text="100.000.000 VNĐ"-->
+                <!--android:textSize="@dimen/_12sdp" />-->
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginStart="@dimen/_16sdp"-->
+                <!--android:layout_marginTop="@dimen/_5sdp"-->
+                <!--android:layout_marginEnd="@dimen/_16sdp">-->
+
+                <!--<TextView-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="@dimen/_8sdp"-->
+
+                <!--android:layout_weight="1"-->
+                <!--android:drawableStart="@drawable/ic_calender_next"-->
+                <!--android:drawablePadding="@dimen/_8sdp"-->
+                <!--android:fontFamily="@font/montserrat_medium"-->
+                <!--android:text="17 thg 05, 2019"-->
+                <!--android:textSize="@dimen/_12sdp" />-->
+
+                <!--<TextView-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginStart="@dimen/_8sdp"-->
+                <!--android:layout_marginTop="@dimen/_8sdp"-->
+                <!--android:layout_marginBottom="@dimen/_16sdp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:drawableStart="@drawable/ic_calender_next"-->
+                <!--android:drawablePadding="@dimen/_8sdp"-->
+                <!--android:fontFamily="@font/montserrat_medium"-->
+                <!--android:text="17 thg 05, 2019"-->
+                <!--android:textSize="@dimen/_12sdp" />-->
+
+                <!--</LinearLayout>-->
+            </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@color/white"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/bt_creat"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/_6sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_6sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/round_gradient_blue"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:paddingStart="@dimen/_18sdp"
+                    android:paddingTop="@dimen/_4sdp"
+                    android:paddingEnd="@dimen/_18sdp"
+                    android:paddingBottom="@dimen/_4sdp"
+                    android:text="@string/creat_new_appoint"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_13sdp" />
+                <Button
+                    android:id="@+id/bt_creat_file"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_marginEnd="@dimen/_6sdp"
+                    android:layout_marginBottom="@dimen/_6sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/round_gradient_orange"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:paddingStart="@dimen/_18sdp"
+                    android:paddingTop="@dimen/_4sdp"
+                    android:paddingEnd="@dimen/_18sdp"
+                    android:paddingBottom="@dimen/_4sdp"
+                    android:text="@string/creat_new_file"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_13sdp" />
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

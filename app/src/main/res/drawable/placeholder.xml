@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:gravity="fill">
+        <shape>
+            <gradient
+                android:angle="270"
+                android:centerColor="#fcb112"
+                android:endColor="#FF9F2D"
+                android:startColor="#febf0e"
+                android:type="linear" />
+        </shape>
+    </item>
+    <!--<item-->
+    <!--android:width="@dimen/_50sdp"-->
+    <!--android:height="@dimen/_50sdp"-->
+    <!--android:gravity="center">-->
+    <!--<bitmap android:src="@drawable/logo_placehoder" />-->
+    <!--</item>-->
+</layer-list>

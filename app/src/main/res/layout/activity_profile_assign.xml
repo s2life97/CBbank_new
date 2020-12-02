@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".features.personal.ProfileAssignActivity">
+    <RelativeLayout
+        android:id="@+id/actionBar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="#145399">
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="?selectableItemBackgroundBorderless"
+            android:padding="@dimen/_10sdp"
+            android:src="@drawable/ic_back_per" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="@string/assign_profile"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_13sdp" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_below="@id/actionBar"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_marginStart="@dimen/_14sdp"
+            android:layout_marginEnd="@dimen/_14sdp"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_regular"
+            android:textSize="@dimen/_12sdp"
+            android:text="@string/cb_th"/>
+        <LinearLayout
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_width="match_parent"
+            android:layout_marginStart="@dimen/_14sdp"
+            android:layout_marginEnd="@dimen/_14sdp"
+            android:layout_height="wrap_content">
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_semibold"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp"
+                android:text="Đặng Thị Viễn"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_regular"
+                android:textColor="@color/black"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:textSize="@dimen/_13sdp"
+                android:text="- CB hội sở chính"/>
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/gray" />
+        <TextView
+            android:layout_marginStart="@dimen/_14sdp"
+            android:layout_marginEnd="@dimen/_14sdp"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_regular"
+            android:textSize="@dimen/_12sdp"
+            android:text="@string/repick_assigner"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginStart="@dimen/_14sdp"
+                    android:layout_marginEnd="@dimen/_14sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:textColor="@color/blue"
+                    android:textSize="@dimen/_14sdp"
+                    android:text="Đặng Thị Viễn"/>
+                <ImageView
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:layout_width="@dimen/_24sdp"
+                    android:padding="@dimen/_6sdp"
+                    android:layout_height="@dimen/_24sdp"
+                    android:src="@drawable/ic_next_menu"/>
+            </RelativeLayout>
+
+
+
+        <FrameLayout
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/gray" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingTop="@dimen/_8sdp"
+        android:id="@+id/ll_last"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:paddingBottom="@dimen/_5sdp"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/bt_back"
+            android:layout_marginStart="@dimen/_14sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/back"
+            android:paddingStart="@dimen/_16sdp"
+            android:paddingEnd="@dimen/_16sdp"
+            android:textAllCaps="false"
+            android:textSize="@dimen/_13sdp"
+            android:textColor="@color/white"
+            android:background="@drawable/round_gradient_blue"
+            android:fontFamily="@font/montserrat_medium"/>
+        <Button
+            android:id="@+id/bt_save"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/save"
+            android:paddingStart="@dimen/_16sdp"
+            android:paddingEnd="@dimen/_16sdp"
+            android:textAllCaps="false"
+            android:textSize="@dimen/_13sdp"
+            android:layout_marginEnd="@dimen/_14sdp"
+            android:textColor="@color/white"
+            android:background="@drawable/round_gradient_orange"
+            android:fontFamily="@font/montserrat_medium"/>
+    </LinearLayout>
+</RelativeLayout>

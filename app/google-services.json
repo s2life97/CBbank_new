@@ -1,0 +1,119 @@
+{
+  "project_info": {
+    "project_number": "868392722228",
+    "firebase_url": "https://saleskitnotification.firebaseio.com",
+    "project_id": "saleskitnotification",
+    "storage_bucket": "saleskitnotification.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:868392722228:android:7700b120abb08366e74f61",
+        "android_client_info": {
+          "package_name": "com.buca.cbbank"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "868392722228-oe53qha26evd5u0q0a9iqt55m81iccv3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBf7muob7yLXHbsRDxPJWOAQ7W_siz-BaM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "868392722228-oe53qha26evd5u0q0a9iqt55m81iccv3.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "868392722228-ptvoa0cfdkbp7hv19870qp98cs0sf5n3.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "cbbank.vn.appsales"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:868392722228:android:4960645767193c61e74f61",
+        "android_client_info": {
+          "package_name": "com.saleskit.cbbank"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "868392722228-oe53qha26evd5u0q0a9iqt55m81iccv3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBf7muob7yLXHbsRDxPJWOAQ7W_siz-BaM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "868392722228-oe53qha26evd5u0q0a9iqt55m81iccv3.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "868392722228-ptvoa0cfdkbp7hv19870qp98cs0sf5n3.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "cbbank.vn.appsales"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:868392722228:android:762b1fa65c280ef6e74f61",
+        "android_client_info": {
+          "package_name": "com.saleskitapplication.cbbank"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "868392722228-oe53qha26evd5u0q0a9iqt55m81iccv3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBf7muob7yLXHbsRDxPJWOAQ7W_siz-BaM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "868392722228-oe53qha26evd5u0q0a9iqt55m81iccv3.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "868392722228-ptvoa0cfdkbp7hv19870qp98cs0sf5n3.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "cbbank.vn.appsales"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

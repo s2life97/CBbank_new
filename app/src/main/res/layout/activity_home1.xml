@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".features.home.HomeActivity1">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_320sdp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:padding="18sp"
+                android:layout_width="?actionBarSize"
+                android:layout_height="?actionBarSize"
+                android:src="@drawable/ic_menu"/>
+            <ImageView
+                android:layout_centerInParent="true"
+                android:layout_width="?actionBarSize"
+                android:layout_height="?actionBarSize"
+                android:src="@drawable/ic_logo_home"/>
+            <ImageView
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/ic_avata_kpi"
+                android:layout_width="?actionBarSize"
+                android:layout_height="?actionBarSize"
+                android:padding="11dp"/>
+        </RelativeLayout>
+        <TextView
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Xin chào!"
+            android:textSize="@dimen/_14sdp"
+            android:textColor="@color/white"/>
+        <LinearLayout
+            android:layout_gravity=""
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_width="match_parent"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_toRightOf="@id/iv_menu"
+            android:background="@drawable/rounded_kpi_red"
+            android:padding="@dimen/_6sdp">
+
+            <EditText
+                android:layout_gravity="center_vertical"
+                android:maxLines="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_4sdp"
+                android:background="@color/transparent"
+                android:textSize="@dimen/_10sdp"
+                android:drawableLeft="@drawable/ic_search"
+                android:hint="@string/search" />
+
+        </LinearLayout>
+        <TextView
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_70sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Các sản phẩm"
+            android:textColor="@color/white"
+            />
+        <LinearLayout
+            android:layout_marginTop="@dimen/_12sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_50sdp"
+                   />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cho vay"
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginStart="@dimen/_16sdp"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_50sdp"
+                   />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cho vay"
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:background="@color/gray"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_marginTop="@dimen/_12sdp"
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/_12sdp"
+            android:layout_height="wrap_content"
+            android:text="@string/recent_use"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_marginTop="@dimen/_12sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </androidx.recyclerview.widget.RecyclerView>
+    </LinearLayout>
+
+</LinearLayout>

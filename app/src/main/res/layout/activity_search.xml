@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".features.home.activity.SearchActivity">
+
+
+
+    <RelativeLayout
+
+        android:id="@+id/rl_head_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_menu_home"
+            android:layout_width="?actionBarSize"
+            android:layout_height="?actionBarSize"
+            android:layout_centerVertical="true"
+            android:padding="16dp"
+            android:src="@drawable/ic_back_pass" />
+
+        <RelativeLayout
+            android:id="@+id/rl_search"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:layout_marginEnd="@dimen/_48sdp"
+            android:layout_toEndOf="@id/iv_menu_home"
+            android:layout_toRightOf="@id/iv_menu_home"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_home_2"
+            android:orientation="horizontal"
+            android:padding="@dimen/_6sdp"
+            android:paddingEnd="@dimen/_12sdp">
+
+            <EditText
+                android:id="@+id/et_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/_4sdp"
+                android:layout_marginEnd="@dimen/_17sdp"
+                android:background="@color/transparent"
+                android:drawableLeft="@drawable/ic_search"
+                android:drawablePadding="@dimen/_5sdp"
+                android:hint="@string/find_inapp"
+                android:maxLines="1"
+                android:paddingTop="@dimen/_3sdp"
+                android:paddingBottom="@dimen/_3sdp"
+                android:textSize="@dimen/_10sdp" />
+
+            <ImageView
+                android:id="@+id/iv_close"
+                android:layout_width="@dimen/_16sdp"
+                android:layout_height="@dimen/_16sdp"
+                android:layout_alignParentEnd="true"
+                android:padding="@dimen/_3sdp"
+                android:src="@drawable/ic_close_search"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:fontFamily="@font/montserrat_regular"
+            android:padding="@dimen/_6sdp"
+            android:text="@string/cancel"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/_13sdp" />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/tv_number_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_11sdp"
+        android:textColor="@color/semi_black"
+        android:fontFamily="@font/montserrat_regular"
+        android:layout_marginStart="@dimen/_12sdp"
+        android:text="Có 5 kết quả tìm kiếm"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_main"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:layout_marginStart="@dimen/_12sdp"
+        android:layout_height="match_parent" />
+</LinearLayout>

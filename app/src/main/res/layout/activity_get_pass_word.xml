@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".features.account.ChangePasswordActivity">
+
+    <ImageView
+        android:id="@+id/iv_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <include
+            layout="@layout/layout_header" />
+
+
+        <TextView
+            android:id="@+id/tv_tilte"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl_head"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_32sdp"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="Vui lòng nhập địa chỉ email để lấy lại mật khẩu."
+            android:textSize="@dimen/_11sdp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@id/tv_tilte">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:background="@color/gray" />
+            <TextView
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/blue"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="@string/email"/>
+            <EditText
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_13sdp"
+                android:paddingTop="@dimen/_3sdp"
+                android:paddingBottom="@dimen/_3sdp"
+                android:background="@color/transparent"
+                android:fontFamily="@font/montserrat_medium"
+                android:hint="@string/enter_your_email"/>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@color/gray" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/blue_round"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_marginEnd="@dimen/_16sdp"
+                android:text="@string/confirm"
+                android:textAllCaps="false"
+                android:textSize="@dimen/_13sdp"
+                android:textColor="@color/blue"
+                android:layout_marginTop="@dimen/_20sdp"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

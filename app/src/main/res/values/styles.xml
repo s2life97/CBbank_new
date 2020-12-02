@@ -1,0 +1,50 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/accent</item>
+    </style>
+
+    <style name="AppTheme.ToolbarStyle">
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <item name="android:textColorSecondary">@android:color/white</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="ButtonStyle">
+        <item name="colorControlHighlight">@color/accent</item>
+        <item name="colorButtonNormal">@color/primary</item>
+    </style>
+    <style name="DialogTheme">
+        <item name="android:windowEnterAnimation">@anim/scale_in</item>
+        <item name="android:windowExitAnimation">@anim/scale_out</item>
+    </style>
+
+    <style name="MyDialogThemeWeel" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">false</item>
+        <!-- Just to prove it's working -->
+    </style>
+    <style name="AppThemeSplash" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/white</item>
+        <item name="android:buttonStyle">@style/Widget.AppCompat.Button.Borderless</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="colorControlActivated">#2ecc71</item>
+        <!-- inactive thumb color -->
+        <item name="android:colorForeground">#16397b</item>
+        <item name="colorSwitchThumbNormal">#cac6c6</item>
+        <item name="colorPrimaryDark">#16397b</item>
+        <item name="colorAccent">#16397b</item>
+
+        <item name="android:windowBackground">@drawable/splash_app</item>
+    </style>
+</resources>

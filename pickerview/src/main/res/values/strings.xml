@@ -1,0 +1,11 @@
+<resources>
+
+    <string name="pickerview_cancel">Hủy</string>
+    <string name="pickerview_submit">Hoàn thành</string>
+    <string name="pickerview_year"></string>
+    <string name="pickerview_month">Tháng</string>
+    <string name="pickerview_day"></string>
+    <string name="pickerview_hours">Giờ</string>
+    <string name="pickerview_minutes">Phút</string>
+    <string name="pickerview_seconds">Giây</string>
+</resources>

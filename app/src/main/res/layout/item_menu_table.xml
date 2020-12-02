@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:background="?selectableItemBackground"
+            android:drawablePadding="@dimen/_8sdp"
+            android:fontFamily="@font/montserrat_medium"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/_50sdp"
+            android:paddingTop="@dimen/_8sdp"
+            android:paddingBottom="@dimen/_8sdp"
+            android:text="@string/interst_hd"
+            android:textSize="@dimen/_13sdp" />
+</LinearLayout>

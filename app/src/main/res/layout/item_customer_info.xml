@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="@dimen/_8sdp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:layout_marginBottom="@dimen/_8sdp"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:text="@string/expire_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_light"
+            android:textSize="@dimen/_11sdp">
+        </TextView>
+        <TextView
+            android:id="@+id/tv_expire_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_11sdp"
+            android:fontFamily="@font/montserrat_medium"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:text="09 thg 09, 2019"
+            android:textColor="@color/red"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_company_name"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_13sdp"
+        android:fontFamily="@font/montserrat_semibold"
+        android:text="Công ty  TNHH nước sạch"/>
+    <TextView
+        android:id="@+id/tv_information"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="Số 8A, Ngõ 12, Đường Hoàng Hoa Thám, Hoàng Văn Thụ, Hai Bà Trưn"
+        android:textSize="@dimen/_12sdp"/>
+    <LinearLayout
+        android:layout_marginTop="@dimen/_8sdp"
+        android:gravity="end"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:textSize="@dimen/_12sdp"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="@string/borrow"/>
+        <TextView
+            android:id="@+id/tv_number_borrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="500.000.000"
+            android:textSize="@dimen/_12sdp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:textColor="@color/red"/>
+    </LinearLayout>
+
+</LinearLayout>

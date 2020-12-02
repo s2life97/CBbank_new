@@ -1,0 +1,1031 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:orientation="vertical"
+    tools:context=".features.detail.CustomerDetailActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_8sdp"
+                android:background="#eff1f4" />
+
+            <LinearLayout
+                android:id="@+id/ll_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_50sdp"
+                android:orientation="vertical"
+
+                >
+
+                <LinearLayout
+                    android:id="@+id/ll_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_name_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_14sdp"
+                        android:layout_marginTop="@dimen/_16sdp"
+                        android:layout_marginEnd="@dimen/_14sdp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:text="@string/p_l_name"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <com.saleskit.cbbank.features.appointment.ClearableEditText
+                        android:id="@+id/tv_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_14sdp"
+                        android:layout_marginEnd="@dimen/_40sdp"
+                        android:background="@color/transparent"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:hint="@string/enter_name"
+                        android:textColor="@color/blue"
+                        android:textSize="@dimen/_14sdp" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0.1dp"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:background="@color/gray" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/ll_type_enterprise"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_14sdp"
+                        android:layout_marginTop="@dimen/_16sdp"
+                        android:layout_marginEnd="@dimen/_14sdp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:text="Loại hình DN"
+                        android:textSize="@dimen/_12sdp" />
+                    <Spinner
+                        android:id="@+id/sp_enterprise_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_14sdp"
+                        android:layout_marginBottom="@dimen/_15sdp">
+
+                    </Spinner>
+<!--                    <com.saleskit.cbbank.features.appointment.ClearableEditText-->
+<!--                        android:id="@+id/et_type_enterPrise"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        -->
+<!--                        android:background="@color/transparent"-->
+<!--                        android:fontFamily="@font/montserrat_semibold"-->
+<!--                        android:hint="Nhập loại hình"-->
+<!--                        android:paddingTop="@dimen/_5sdp"-->
+<!--                        android:paddingBottom="@dimen/_5sdp"-->
+<!--                        android:textSize="@dimen/_14sdp" />-->
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0.1dp"
+                        android:background="@color/gray" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/bt_pick_birthdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_birthday_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_14sdp"
+                        android:layout_marginTop="@dimen/_16sdp"
+                        android:layout_marginEnd="@dimen/_14sdp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:text="@string/date_of_birth"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <TextView
+                        android:id="@+id/tv_date_birth"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_14sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_14sdp"
+                        android:layout_marginBottom="@dimen/_20sdp"
+                        android:background="@color/transparent"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:hint="@string/enter_birth_date"
+                        android:textColor="@color/semi_black"
+                        android:textSize="@dimen/_14sdp" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0.1dp"
+                        android:background="@color/gray" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/bt_gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?selectableItemBackground"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_14sdp"
+                        android:layout_marginTop="@dimen/_16sdp"
+                        android:layout_marginEnd="@dimen/_14sdp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:text="@string/gender"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginBottom="@dimen/_20sdp">
+
+                        <TextView
+                            android:id="@+id/tv_gender"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_14sdp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_marginEnd="@dimen/_14sdp"
+                            android:fontFamily="@font/montserrat_semibold"
+
+                            android:textColor="@color/blue"
+                            android:textSize="@dimen/_14sdp" />
+
+                    </RelativeLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0.1dp"
+                        android:background="@color/gray" />
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:background="@color/gray" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_identity_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_14sdp"
+                            android:layout_marginTop="@dimen/_16sdp"
+                            android:layout_marginEnd="@dimen/_14sdp"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:text="@string/indentity"
+                            android:textSize="@dimen/_12sdp" />
+
+                        <!-- android:inputType="number" -->
+                        <com.saleskit.cbbank.features.appointment.ClearableEditText
+                            android:id="@+id/tv_identity"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_14sdp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_marginEnd="@dimen/_120sdp"
+                            android:layout_marginBottom="@dimen/_20sdp"
+                            android:background="@color/transparent"
+                            android:fontFamily="@font/montserrat_semibold"
+                            android:hint="Nhập số"
+                            android:textColor="@color/semi_black"
+                            android:textSize="@dimen/_14sdp" />
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0.1dp"
+                            android:background="@color/gray" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_check_cic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/_12sdp"
+                        android:background="@drawable/rounded_gradient_blue"
+                        android:paddingStart="@dimen/_16sdp"
+                        android:paddingTop="@dimen/_8sdp"
+                        android:paddingEnd="@dimen/_16sdp"
+                        android:paddingBottom="@dimen/_8sdp"
+                        android:text="Check CIC"
+                        android:textColor="@color/white" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/bt_check_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:background="?selectableItemBackground"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_14sdp"
+                        android:layout_marginTop="@dimen/_16sdp"
+                        android:layout_marginEnd="@dimen/_14sdp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:text="@string/status"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_20sdp">
+
+                        <TextView
+                            android:id="@+id/tv_status"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_14sdp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_marginEnd="@dimen/_40sdp"
+                            android:fontFamily="@font/montserrat_semibold"
+
+                            android:textColor="@color/blue"
+                            android:textSize="@dimen/_14sdp" />
+
+                        <ImageView
+                            android:layout_width="@dimen/_24sdp"
+                            android:layout_height="@dimen/_24sdp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="@dimen/_5sdp"
+                            android:padding="@dimen/_6sdp"
+                            android:src="@drawable/ic_next_menu" />
+
+
+
+                    </RelativeLayout>
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0.1dp"
+                        android:background="@color/gray" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_14sdp"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    android:layout_marginEnd="@dimen/_14sdp"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:text="@string/provide_location"
+                    android:textSize="@dimen/_12sdp" />
+
+                <com.saleskit.cbbank.features.appointment.ClearableEditText
+                    android:id="@+id/tv_provide_place"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_14sdp"
+                    android:layout_marginEnd="@dimen/_14sdp"
+                    android:layout_marginBottom="@dimen/_15sdp"
+                    android:background="@color/transparent"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:hint="@string/enter_location"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:paddingBottom="@dimen/_5sdp"
+                    android:textSize="@dimen/_14sdp" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:background="@color/gray" />
+
+                <LinearLayout
+                    android:id="@+id/bt_pick_provide"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_14sdp"
+                        android:layout_marginTop="@dimen/_16sdp"
+                        android:layout_marginEnd="@dimen/_14sdp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:text="@string/date_provide"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <TextView
+                        android:id="@+id/tv_date_provide"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_14sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_14sdp"
+                        android:layout_marginBottom="@dimen/_20sdp"
+                        android:background="@color/transparent"
+                        android:backgroundTint="@color/transparent"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:hint="@string/enter_date"
+                        android:textColor="@color/semi_black"
+                        android:textSize="@dimen/_14sdp" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0.1dp"
+                        android:background="@color/gray" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_location_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_14sdp"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    android:layout_marginEnd="@dimen/_14sdp"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:text="@string/address"
+                    android:textSize="@dimen/_12sdp" />
+
+                <com.saleskit.cbbank.features.appointment.ClearableEditText
+                    android:id="@+id/tv_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_14sdp"
+                    android:layout_marginEnd="@dimen/_14sdp"
+                    android:layout_marginBottom="@dimen/_15sdp"
+                    android:background="@color/transparent"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:hint="@string/enter_address"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:paddingBottom="@dimen/_5sdp"
+                    android:textSize="@dimen/_14sdp" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:background="@color/gray" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_14sdp"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    android:layout_marginEnd="@dimen/_14sdp"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:text="@string/phone_number"
+                    android:textSize="@dimen/_12sdp" />
+
+                <com.saleskit.cbbank.features.appointment.ClearableEditText
+                    android:id="@+id/tv_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_14sdp"
+                    android:layout_marginEnd="@dimen/_14sdp"
+                    android:layout_marginBottom="@dimen/_15sdp"
+                    android:background="@color/transparent"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:hint="@string/enter_phone_number"
+                    android:inputType="number"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:paddingBottom="@dimen/_5sdp"
+                    android:textSize="@dimen/_14sdp" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:background="@color/gray" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_14sdp"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    android:layout_marginEnd="@dimen/_14sdp"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:text="@string/email"
+                    android:textSize="@dimen/_12sdp" />
+
+                <com.saleskit.cbbank.features.appointment.ClearableEditText
+                    android:id="@+id/tv_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_14sdp"
+                    android:layout_marginEnd="@dimen/_14sdp"
+                    android:layout_marginBottom="@dimen/_15sdp"
+                    android:background="@color/transparent"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:hint="@string/enter_email"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:paddingBottom="@dimen/_5sdp"
+                    android:textSize="@dimen/_14sdp" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:background="@color/gray" />
+
+                <LinearLayout
+                    android:id="@+id/ll_option_personal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <LinearLayout
+                        android:id="@+id/bt_pick_edcation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?selectableItemBackground"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_14sdp"
+                            android:layout_marginTop="@dimen/_16sdp"
+                            android:layout_marginEnd="@dimen/_14sdp"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:text="@string/education_level"
+                            android:textSize="@dimen/_12sdp" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginBottom="@dimen/_20sdp">
+
+                            <TextView
+                                android:id="@+id/tv_education"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_14sdp"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:layout_marginEnd="@dimen/_14sdp"
+                                android:fontFamily="@font/montserrat_semibold"
+
+                                android:textColor="@color/blue"
+                                android:textSize="@dimen/_14sdp" />
+
+                            <ImageView
+                                android:layout_width="@dimen/_24sdp"
+                                android:layout_height="@dimen/_24sdp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="@dimen/_5sdp"
+                                android:padding="@dimen/_6sdp"
+                                android:src="@drawable/ic_next_menu" />
+                        </RelativeLayout>
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0.1dp"
+                            android:background="@color/gray" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/bt_pick_assert"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?selectableItemBackground"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_14sdp"
+                            android:layout_marginTop="@dimen/_16sdp"
+                            android:layout_marginEnd="@dimen/_14sdp"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:text="@string/house_own_status"
+                            android:textSize="@dimen/_12sdp" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginBottom="@dimen/_20sdp">
+
+                            <TextView
+                                android:id="@+id/tv_assert"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_14sdp"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:layout_marginEnd="@dimen/_40sdp"
+                                android:fontFamily="@font/montserrat_semibold"
+
+                                android:textColor="@color/blue"
+                                android:textSize="@dimen/_14sdp" />
+
+                            <ImageView
+                                android:layout_width="@dimen/_24sdp"
+                                android:layout_height="@dimen/_24sdp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="@dimen/_5sdp"
+                                android:padding="@dimen/_6sdp"
+                                android:src="@drawable/ic_next_menu" />
+                        </RelativeLayout>
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0.1dp"
+                            android:background="@color/gray" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/bt_pick_martial"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?selectableItemBackground"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_14sdp"
+                            android:layout_marginTop="@dimen/_16sdp"
+                            android:layout_marginEnd="@dimen/_14sdp"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:text="@string/marriage_status"
+                            android:textSize="@dimen/_12sdp" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginBottom="@dimen/_24sdp">
+
+                            <TextView
+                                android:id="@+id/tv_martial"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_14sdp"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:layout_marginEnd="@dimen/_14sdp"
+                                android:fontFamily="@font/montserrat_semibold"
+                                android:textColor="@color/blue"
+                                android:textSize="@dimen/_14sdp" />
+
+                            <ImageView
+                                android:layout_width="@dimen/_24sdp"
+                                android:layout_height="@dimen/_24sdp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="@dimen/_5sdp"
+                                android:padding="@dimen/_6sdp"
+                                android:src="@drawable/ic_next_menu" />
+                        </RelativeLayout>
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0.1dp"
+                            android:background="@color/gray" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:id="@+id/bt_pick_customer_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?selectableItemBackground"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_14sdp"
+                            android:layout_marginTop="@dimen/_16sdp"
+                            android:layout_marginEnd="@dimen/_14sdp"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:text="@string/customer_type"
+                            android:textSize="@dimen/_12sdp" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginBottom="@dimen/_24sdp">
+
+                            <TextView
+                                android:id="@+id/tv_customer_type"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_14sdp"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:layout_marginEnd="@dimen/_14sdp"
+                                android:fontFamily="@font/montserrat_semibold"
+                                android:text="Khách hàng cá nhân"
+                                android:textColor="@color/blue"
+                                android:textSize="@dimen/_14sdp" />
+
+                            <ImageView
+                                android:layout_width="@dimen/_24sdp"
+                                android:layout_height="@dimen/_24sdp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="@dimen/_5sdp"
+                                android:padding="@dimen/_6sdp"
+                                android:src="@drawable/ic_next_menu" />
+                        </RelativeLayout>
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0.1dp"
+                            android:background="@color/gray" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/ll_option_enterprise"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_14sdp"
+                        android:layout_marginTop="@dimen/_16sdp"
+                        android:layout_marginEnd="@dimen/_14sdp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:text="Địa chỉ GĐ hiện tại"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <com.saleskit.cbbank.features.appointment.ClearableEditText
+                        android:id="@+id/et_current_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_14sdp"
+                        android:layout_marginEnd="@dimen/_14sdp"
+                        android:layout_marginBottom="@dimen/_15sdp"
+                        android:background="@color/transparent"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:hint="Nhập địa chỉ"
+                        android:paddingTop="@dimen/_5sdp"
+                        android:paddingBottom="@dimen/_5sdp"
+                        android:textSize="@dimen/_14sdp" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0.1dp"
+                        android:background="@color/gray">
+
+                    </FrameLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_14sdp"
+                        android:layout_marginTop="@dimen/_16sdp"
+                        android:layout_marginEnd="@dimen/_14sdp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:text="Họ tên người đại diện theo pháp luật"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <com.saleskit.cbbank.features.appointment.ClearableEditText
+                        android:id="@+id/et_name_present_enterPrise"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_14sdp"
+                        android:layout_marginEnd="@dimen/_14sdp"
+                        android:layout_marginBottom="@dimen/_15sdp"
+                        android:background="@color/transparent"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:hint="Nhập tên"
+                        android:paddingTop="@dimen/_5sdp"
+                        android:paddingBottom="@dimen/_5sdp"
+                        android:textSize="@dimen/_14sdp" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0.1dp"
+                        android:background="@color/gray" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_14sdp"
+                        android:layout_marginTop="@dimen/_16sdp"
+                        android:layout_marginEnd="@dimen/_14sdp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:text="Chức vụ"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <com.saleskit.cbbank.features.appointment.ClearableEditText
+                        android:id="@+id/et_position_enter"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_14sdp"
+                        android:layout_marginEnd="@dimen/_14sdp"
+                        android:layout_marginBottom="@dimen/_15sdp"
+                        android:background="@color/transparent"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:hint="Nhập chức vụ"
+                        android:paddingTop="@dimen/_5sdp"
+                        android:paddingBottom="@dimen/_5sdp"
+                        android:textSize="@dimen/_14sdp" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0.1dp"
+                        android:background="@color/gray" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_14sdp"
+                        android:layout_marginTop="@dimen/_16sdp"
+                        android:layout_marginEnd="@dimen/_14sdp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:text="CMND/CCC"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <com.saleskit.cbbank.features.appointment.ClearableEditText
+                        android:id="@+id/et_identity_enter"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:layout_marginStart="@dimen/_14sdp"
+                        android:layout_marginEnd="@dimen/_14sdp"
+                        android:layout_marginBottom="@dimen/_15sdp"
+                        android:background="@color/transparent"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:hint="Nhập CMND/CCCD"
+                        android:paddingTop="@dimen/_5sdp"
+                        android:paddingBottom="@dimen/_5sdp"
+                        android:textSize="@dimen/_14sdp" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0.1dp"
+                        android:background="@color/gray" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_14sdp"
+                        android:layout_marginTop="@dimen/_16sdp"
+                        android:layout_marginEnd="@dimen/_14sdp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:text="Số điện thoại"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <com.saleskit.cbbank.features.appointment.ClearableEditText
+                        android:id="@+id/et_phone_1_enter"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_14sdp"
+                        android:layout_marginEnd="@dimen/_14sdp"
+                        android:layout_marginBottom="@dimen/_15sdp"
+                        android:background="@color/transparent"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:hint="Nhập số điện thoại"
+                        android:inputType="number"
+                        android:paddingTop="@dimen/_5sdp"
+                        android:paddingBottom="@dimen/_5sdp"
+                        android:textSize="@dimen/_14sdp" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0.1dp"
+                        android:background="@color/gray" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_14sdp"
+                        android:layout_marginTop="@dimen/_16sdp"
+                        android:layout_marginEnd="@dimen/_14sdp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:text="Email"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <com.saleskit.cbbank.features.appointment.ClearableEditText
+                        android:id="@+id/et_email_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_14sdp"
+                        android:layout_marginEnd="@dimen/_14sdp"
+                        android:layout_marginBottom="@dimen/_15sdp"
+                        android:background="@color/transparent"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:hint="Nhập email"
+                        android:paddingTop="@dimen/_5sdp"
+                        android:paddingBottom="@dimen/_5sdp"
+                        android:textSize="@dimen/_14sdp" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0.1dp"
+                        android:background="@color/gray" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_14sdp"
+                        android:layout_marginTop="@dimen/_16sdp"
+                        android:layout_marginEnd="@dimen/_14sdp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:text="Họ tên người quản lý doanh nghiệp"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <com.saleskit.cbbank.features.appointment.ClearableEditText
+                        android:id="@+id/et_name_present_1_enterPrise"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_14sdp"
+                        android:layout_marginEnd="@dimen/_14sdp"
+                        android:layout_marginBottom="@dimen/_15sdp"
+                        android:background="@color/transparent"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:hint="Nhập tên"
+                        android:paddingTop="@dimen/_5sdp"
+                        android:paddingBottom="@dimen/_5sdp"
+                        android:textSize="@dimen/_14sdp" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0.1dp"
+                        android:background="@color/gray" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_14sdp"
+                        android:layout_marginTop="@dimen/_16sdp"
+                        android:layout_marginEnd="@dimen/_14sdp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:text="Chức vụ"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <com.saleskit.cbbank.features.appointment.ClearableEditText
+                        android:id="@+id/et_position__1_enter"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_14sdp"
+                        android:layout_marginEnd="@dimen/_14sdp"
+                        android:layout_marginBottom="@dimen/_15sdp"
+                        android:background="@color/transparent"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:hint="Nhập chức vụ"
+                        android:paddingTop="@dimen/_5sdp"
+                        android:paddingBottom="@dimen/_5sdp"
+                        android:textSize="@dimen/_14sdp" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0.1dp"
+                        android:background="@color/gray" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_14sdp"
+                        android:layout_marginTop="@dimen/_16sdp"
+                        android:layout_marginEnd="@dimen/_14sdp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:text="CMND/CCC"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <com.saleskit.cbbank.features.appointment.ClearableEditText
+                        android:id="@+id/et_identity1_enter"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_14sdp"
+                        android:layout_marginEnd="@dimen/_14sdp"
+                        android:layout_marginBottom="@dimen/_15sdp"
+                        android:background="@color/transparent"
+                        android:inputType="number"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:hint="Nhập CMND/CCCD"
+                        android:paddingTop="@dimen/_5sdp"
+                        android:paddingBottom="@dimen/_5sdp"
+                        android:textSize="@dimen/_14sdp" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0.1dp"
+                        android:background="@color/gray" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_14sdp"
+                        android:layout_marginTop="@dimen/_16sdp"
+                        android:layout_marginEnd="@dimen/_14sdp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:text="Số điện thoại"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <com.saleskit.cbbank.features.appointment.ClearableEditText
+                        android:id="@+id/et_phone_2_enter"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_14sdp"
+                        android:layout_marginEnd="@dimen/_14sdp"
+                        android:layout_marginBottom="@dimen/_15sdp"
+                        android:background="@color/transparent"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:hint="Nhập số điện thoại"
+                        android:inputType="number"
+                        android:paddingTop="@dimen/_5sdp"
+                        android:paddingBottom="@dimen/_5sdp"
+                        android:textSize="@dimen/_14sdp" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0.1dp"
+                        android:background="@color/gray" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_14sdp"
+                        android:layout_marginTop="@dimen/_16sdp"
+                        android:layout_marginEnd="@dimen/_14sdp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:text="Email"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <com.saleskit.cbbank.features.appointment.ClearableEditText
+                        android:id="@+id/et_email_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_14sdp"
+                        android:layout_marginEnd="@dimen/_14sdp"
+                        android:layout_marginBottom="@dimen/_15sdp"
+                        android:background="@color/transparent"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:hint="Nhập email"
+                        android:paddingTop="@dimen/_5sdp"
+                        android:paddingBottom="@dimen/_5sdp"
+                        android:textSize="@dimen/_14sdp" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0.1dp"
+                        android:background="@color/gray" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white">
+
+            <Button
+                android:id="@+id/bt_complete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_14sdp"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:background="@drawable/round_gradient_orange"
+                android:fontFamily="@font/montserrat_medium"
+                android:paddingStart="@dimen/_18sdp"
+                android:paddingEnd="@dimen/_18sdp"
+                android:text="@string/continue_step"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_13sdp" />
+        </FrameLayout>
+    </RelativeLayout>
+</ScrollView>

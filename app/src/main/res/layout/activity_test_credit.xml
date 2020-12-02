@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fillViewport="true"
+    android:id="@+id/scroll_view"
+    tools:context=".features.customer.add_new_customer.CreditEvaluationFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <FrameLayout
+            android:id="@+id/tv_evaluate_done"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#eff1f4"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/tv_result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:background="@color/green_title"
+                android:fontFamily="@font/montserrat_regular"
+                android:gravity="center"
+                android:paddingTop="@dimen/_8sdp"
+                android:paddingBottom="@dimen/_8sdp"
+                android:text="@string/customer_enought"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12sdp" />
+        </FrameLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_main"
+            android:layout_below="@id/tv_evaluate_done"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="@dimen/_80sdp"
+            android:layout_height="match_parent">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <LinearLayout
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_10sdp">
+
+            <Button
+                android:id="@+id/bt_evaluate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:layout_marginEnd="@dimen/_4sdp"
+                android:layout_weight="1"
+                android:background="@drawable/round_gradient_blue"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="@string/rate_creadit"
+                android:textAllCaps="false"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/bt_next"
+                android:layout_width="0dp"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_4sdp"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:layout_marginEnd="@dimen/_16sdp"
+                android:layout_weight="1"
+                android:background="@drawable/state_continue_button"
+                android:enabled="false"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="@string/continue_step"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</androidx.core.widget.NestedScrollView>
+
+
+

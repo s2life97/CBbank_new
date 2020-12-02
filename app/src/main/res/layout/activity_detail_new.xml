@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".features.news.DetailNewActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/blue_kpi"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_marginEnd="@dimen/_3sdp"
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/_13sdp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back"/>
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_marginStart="@dimen/_45sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/new_p"
+            android:textSize="@dimen/_13sdp"
+            android:fontFamily="@font/montserrat_medium"
+            android:textColor="@color/white"/>
+    </RelativeLayout>
+
+    <WebView
+        android:id="@+id/wv_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

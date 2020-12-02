@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".features.appointment.FilterAppointActivity">
+    <RelativeLayout
+        android:id="@+id/rl_head"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/blue_kpi">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/_13sdp"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="@string/filter"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_13sdp" />
+        <TextView
+            android:id="@+id/tv_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_12sdp"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="Làm mới"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:layout_alignParentEnd="true"
+            android:padding="15dp"
+            android:src="@drawable/ic_filter" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_below="@id/rl_head"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bộ lọc khác"
+            android:fontFamily="@font/montserrat_medium"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:textSize="@dimen/_14sdp"
+            />
+        <RelativeLayout
+            android:id="@+id/rl_result"
+            android:paddingTop="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:paddingBottom="@dimen/_8sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:fontFamily="@font/montserrat_medium"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@color/gray_appoint"
+                android:text="Kết quả cuộc hẹn"/>
+            <TextView
+                android:id="@+id/tv_result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:fontFamily="@font/montserrat_medium"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@color/blue_meeting"
+                android:text="Chưa chọn"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl_start_date"
+            android:paddingTop="@dimen/_8sdp"
+            android:paddingBottom="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:fontFamily="@font/montserrat_medium"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@color/gray_appoint"
+                android:text="Từ ngày"/>
+            <TextView
+                android:id="@+id/tv_start_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:fontFamily="@font/montserrat_medium"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@color/blue_meeting"
+                android:text="Chưa chọn"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl_end_date"
+            android:paddingTop="@dimen/_8sdp"
+            android:paddingBottom="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_8sdp"            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:fontFamily="@font/montserrat_medium"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@color/gray_appoint"
+                android:text="Đến ngày"/>
+            <TextView
+                android:id="@+id/tv_end_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:fontFamily="@font/montserrat_medium"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@color/blue_meeting"
+                android:text="Chưa chọn"/>
+        </RelativeLayout>
+        <FrameLayout
+            android:layout_marginTop="@dimen/_16sdp"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/gray"></FrameLayout>
+    </LinearLayout>
+    <Button
+        android:id="@+id/bt_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/square_gradient"
+        android:fontFamily="@font/montserrat_medium"
+        android:paddingStart="@dimen/_18sdp"
+        android:paddingEnd="@dimen/_18sdp"
+        android:text="Tìm kiếm"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_13sdp" />
+</RelativeLayout>

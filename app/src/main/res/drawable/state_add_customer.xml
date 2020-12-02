@@ -1,0 +1,5 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/rounded_add_new_customer_selected" android:state_selected="true" />
+    <item android:drawable="@drawable/rounded_add_new_customer_unselected" android:state_selected="false" />
+   />
+</selector>

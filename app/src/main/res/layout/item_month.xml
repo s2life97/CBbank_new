@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_63sdp"
+    android:id="@+id/fl_main"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingStart="@dimen/_6sdp"
+    android:layout_marginEnd="@dimen/_9sdp"
+    android:paddingTop="@dimen/_14sdp"
+    android:paddingEnd="@dimen/_6sdp"
+    android:background="@drawable/state_square"
+    android:paddingBottom="@dimen/_14sdp">
+
+    <TextView
+        android:id="@+id/tv_month_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="T10/2019"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:gravity="center_horizontal|center_vertical"
+        android:textColor="@drawable/item_month_text_color"
+        android:textSize="@dimen/_11sdp" />
+</FrameLayout>

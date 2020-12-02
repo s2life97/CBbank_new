@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+    <RelativeLayout
+        android:layout_marginTop="@dimen/_4sdp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_120sdp">
+
+        <RelativeLayout
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_80sdp"
+            android:layout_margin="@dimen/_9sdp"
+            android:background="@drawable/rounded_kpi_red">
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/_12sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/_90sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tiếp vốn kinh doanh"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:text="Gói ưu đãi dành cho khách hàng mở tài khoản. Tiếp vốn kinh doanh" />
+            </LinearLayout>
+        </RelativeLayout>
+        <ImageView
+            android:id="@+id/iv_bg"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="@dimen/_130sdp"
+    android:background="@drawable/blue_radius"
+    android:layout_marginEnd="@dimen/_14sdp"
+    app:cardCornerRadius="@dimen/_8sdp"
+    android:layout_height="@dimen/_160sdp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#d0e6fb"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_logo"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_120sdp"
+            android:scaleType="centerCrop"
+          />
+        <RelativeLayout
+            android:layout_below="@id/iv_logo"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="@dimen/_3sdp"
+            android:layout_height="match_parent"
+            android:padding="@dimen/_3sdp">
+            <TextView
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_marginStart="@dimen/_4sdp"
+                android:textSize="@dimen/_11sdp"
+                android:layout_width="@dimen/_90sdp"
+                android:maxLines="2"
+                android:gravity="center_vertical"
+                android:fontFamily="@font/montserrat_medium"
+                android:layout_height="match_parent"
+                android:text="image"/>
+            <ImageView
+                android:src="@drawable/ic_eye_en"
+                android:layout_centerVertical="true"
+                android:layout_width="@dimen/_16sdp"
+                android:layout_height="@dimen/_16sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:layout_alignParentEnd="true"/>
+
+        </RelativeLayout>
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:padding="@dimen/_8sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/ic_close_dialog"/>
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

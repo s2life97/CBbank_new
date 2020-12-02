@@ -1,0 +1,5 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/round_gradient_blue" android:state_enabled="true" />
+    <item android:drawable="@drawable/rounded_grey" android:state_enabled="false" />
+    />
+</selector>

@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".features.customer.add_new_customer.AddNewCustomerActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/blue_kpi">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/_13sdp"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Title"
+            android:fontFamily="@font/montserrat_semibold"
+            android:textSize="@dimen/_14sdp"
+            android:textColor="@color/white"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_steps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_step_1"
+                android:layout_width="@dimen/_32sdp"
+                android:layout_margin="@dimen/_8sdp"
+                android:layout_height="@dimen/_32sdp"
+                android:background="@drawable/state_add_customer"
+                android:fontFamily="@font/montserrat_semibold"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_16sdp" />
+
+            <View
+                android:id="@+id/v_step_1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_3sdp"
+                android:background="@drawable/state_add_customer_progress"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_step_1_des"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Thông tin khách hàng"
+            android:textSize="@dimen/_9sdp"
+            android:gravity="start|center"
+            android:textColor="@color/blue"
+            android:fontFamily="@font/montserrat_semibold"/>
+
+        <LinearLayout
+            android:id="@+id/ll_icon_2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_step_2"
+                android:layout_width="@dimen/_32sdp"
+                android:layout_height="@dimen/_32sdp"
+                android:layout_margin="@dimen/_8sdp"
+                android:background="@drawable/state_add_customer"
+                android:fontFamily="@font/montserrat_semibold"
+                android:gravity="center"
+                android:text="2"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_16sdp" />
+
+            <View
+                android:id="@+id/v_step_2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_3sdp"
+                android:background="@drawable/state_add_customer_progress" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_step_2_des"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Đánh giá tín dụng"
+            android:visibility="gone"
+            android:textSize="@dimen/_9sdp"
+            android:gravity="start|center"
+            android:textColor="@color/blue"
+            android:fontFamily="@font/montserrat_semibold"/>
+
+        <LinearLayout
+            android:id="@+id/ll_icon_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_step_3"
+                android:layout_width="@dimen/_32sdp"
+                android:layout_height="@dimen/_32sdp"
+                android:text="3"
+                android:gravity="center"
+                android:fontFamily="@font/montserrat_semibold"
+                android:textColor="@color/white"
+                android:background="@drawable/state_add_customer"
+                android:layout_margin="@dimen/_8sdp"
+                android:textSize="@dimen/_16sdp"/>
+
+            <View
+                android:id="@+id/v_step_3"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_3sdp"
+                android:background="@drawable/state_add_customer_progress"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_step_3_des"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Tài sản đảm bảo"
+            android:visibility="gone"
+            android:textSize="@dimen/_9sdp"
+            android:gravity="start|center"
+            android:textColor="@color/blue"
+            android:fontFamily="@font/montserrat_semibold"/>
+        <LinearLayout
+            android:id="@+id/ll_icon_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_step_4"
+                android:layout_width="@dimen/_32sdp"
+                android:layout_height="@dimen/_32sdp"
+                android:text="4"
+                android:gravity="center"
+                android:fontFamily="@font/montserrat_semibold"
+                android:textColor="@color/white"
+                android:background="@drawable/state_add_customer"
+                android:layout_margin="@dimen/_8sdp"
+                android:textSize="@dimen/_16sdp"/>
+
+            <View
+                android:id="@+id/v_step_4"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_3sdp"
+                android:background="@drawable/state_add_customer_progress"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_step_4_des"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Hạn mức tín dụng"
+            android:visibility="gone"
+            android:textSize="@dimen/_9sdp"
+            android:gravity="start|center"
+            android:textColor="@color/blue"
+            android:fontFamily="@font/montserrat_semibold"/>
+        <LinearLayout
+            android:id="@+id/ll_icon_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_step_5"
+                android:layout_width="@dimen/_32sdp"
+                android:layout_height="@dimen/_32sdp"
+                android:text="5"
+                android:gravity="center"
+                android:fontFamily="@font/montserrat_semibold"
+                android:textColor="@color/white"
+                android:background="@drawable/state_add_customer"
+                android:layout_margin="@dimen/_8sdp"
+                android:textSize="@dimen/_16sdp"/>
+
+            <View
+                android:id="@+id/v_step_6"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_3sdp"
+                android:background="@drawable/state_add_customer_progress"/>
+
+        </LinearLayout>
+        <RelativeLayout
+            android:id="@+id/rl_step_5"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_step_5_des"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Hoàn tất hồ sơ"
+                android:visibility="gone"
+                android:textSize="@dimen/_9sdp"
+                android:gravity="start|center"
+                android:textColor="@color/blue"
+                android:fontFamily="@font/montserrat_semibold"/>
+
+            <View
+                android:id="@+id/v_step_5"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_3sdp"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/state_add_customer_progress"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+    <!--<FrameLayout-->
+        <!--android:id="@+id/add_new_customer_container"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent" />-->
+
+    <com.saleskit.cbbank.features.customer.add_new_customer.CustomViewPager
+        android:id="@+id/viewpager_customer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group >
+        <item
+            android:id="@+id/menu_local"
+            android:title="Cán bộ ngân hàng" />
+        <item
+            android:id="@+id/menu_internal"
+            android:title="Cộng tác viên" />
+
+
+    </group>
+</menu>
+
+    <!--<menu xmlns:android="http://schemas.android.com/apk/res/android"--><!--xmlns:app="http://schemas.android.com/apk/res-auto"--><!--xmlns:tools="http://schemas.android.com/tools">--><!--<item--><!--android:title="Choose Action"--><!--android:icon="@mipmap/ic_launcher"--><!--app:showAsAction="always">--><!--<menu>--><!--<item--><!--android:id="@+id/menu_rename"--><!--android:icon="@android:drawable/ic_delete"--><!--android:title="Rename" />--><!--<item--><!--android:id="@+id/menu_delete"--><!--android:icon="@drawable/ic_trash"--><!--android:title="Delete" />--><!--</menu>--><!--</item>--><!--</menu>-->

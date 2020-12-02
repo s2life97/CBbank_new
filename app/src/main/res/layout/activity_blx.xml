@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".features.home.BlxActivity">
+
+    <RelativeLayout
+        android:id="@+id/actionBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#145399">
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="?selectableItemBackgroundBorderless"
+            android:padding="@dimen/_10sdp"
+            android:src="@drawable/ic_back_per" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="@dimen/_100sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="@string/blx"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp" />
+    </RelativeLayout>
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="@dimen/_20sdp"-->
+        <!--android:background="@color/white">-->
+
+
+        <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_marginStart="@dimen/_2sdp"-->
+            <!--android:background="@drawable/square_gradient_blue"-->
+            <!--android:fontFamily="@font/montserrat_medium"-->
+            <!--android:paddingStart="@dimen/_16sdp"-->
+            <!--android:paddingTop="@dimen/_20sdp"-->
+            <!--android:paddingBottom="@dimen/_16sdp"-->
+            <!--android:text="Trả lãi cuối kỳ (%/năm )"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:textSize="@dimen/_15sdp" />-->
+    <!--</LinearLayout>-->
+
+    <!--<androidx.recyclerview.widget.RecyclerView-->
+        <!--android:id="@+id/rl_blx"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent" />-->
+
+    <com.saleskit.cbbank.util.TunFixTableLayout
+        android:id="@+id/ftl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:fixtable_divider_color="#ffffff"
+        app:fixtable_column_1_color="#ffffff"
+        app:fixtable_column_2_color="#E9E9E9"
+        app:fixtable_title_color="#1363ad"
+        app:fixtable_item_gravity="CENTER"
+        app:fixtable_item_top_bottom_padding="@dimen/_24sdp"
+        app:fixtable_item_width="@dimen/_100sdp"
+        app:fixtable_show_left_view_shadow="true"
+        />
+</LinearLayout>

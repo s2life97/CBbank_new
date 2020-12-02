@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:layout_marginBottom="@dimen/_7sdp"
+    android:paddingBottom="@dimen/_12sdp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_12sdp">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="Ban giám đốc - CN An Giang"
+            android:textSize="@dimen/_13sdp" />
+
+        <TextView
+            android:id="@+id/tv_percent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:background="@drawable/rounded_kpi_orange"
+            android:fontFamily="@font/montserrat_medium"
+            android:gravity="center"
+            android:paddingStart="@dimen/_16sdp"
+            android:paddingTop="@dimen/_3sdp"
+            android:paddingEnd="@dimen/_16sdp"
+            android:paddingBottom="@dimen/_3sdp"
+            android:text="25%"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/_12sdp" />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/tv_position"
+        android:layout_width="wrap_content"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:fontFamily="@font/montserrat_light"
+        android:textColor="@color/semi_black"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:text="Trưởng phòng khách hàng bán lẻ"
+        android:layout_height="wrap_content" />
+
+    <ProgressBar
+        android:id="@+id/pb_media_progress_quater"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_10sdp"
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:max="100"
+        android:padding="@dimen/_2sdp"
+        android:progress="25"
+        android:progressDrawable="@drawable/progress_bg_orange" />
+
+</LinearLayout>
